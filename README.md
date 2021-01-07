@@ -1,0 +1,1 @@
+A simple dataset generator to be able to generate useful dummy datasets for creating simple visualizations.
