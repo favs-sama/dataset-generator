@@ -26,7 +26,7 @@ async function generateAnalyticsDatabase() {
     "comment_analytics" : commentAnalyticsData
   }
 
-  await fs.writeFile('src/data/posts_analytics.json', JSON.stringify(postsDb), { flag : 'wx' }, (err) => {
+  await fs.writeFile('src/data/posts_analytics.json', JSON.stringify(postsDb), { flag : 'w' }, (err) => {
     if (err) {
       throw err;
     }
@@ -34,7 +34,7 @@ async function generateAnalyticsDatabase() {
     console.log('posts db was saved');
   });
 
-  await fs.writeFile('src/data/comments_analytics.json', JSON.stringify(commentsDb), { flag : 'wx' }, (err) => {
+  await fs.writeFile('src/data/comments_analytics.json', JSON.stringify(commentsDb), { flag : 'w' }, (err) => {
     if (err) {
       throw err;
     }
